@@ -1,4 +1,4 @@
-#  salvando a lista através de uma função.
+#  Salvando a lista através de uma função.
 import random
 def salvar_lista():
     while True:
@@ -8,6 +8,8 @@ def salvar_lista():
             valor_maximo = int(input('Informe o  valor final: '))
 
             lista = [random.randint(valor_minimo, valor_maximo) for _ in range(quantidade)]
+            if len (lista) > 0:
+                print (True)
             for numero in lista:
                 print(numero)
 
