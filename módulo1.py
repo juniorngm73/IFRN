@@ -1,8 +1,8 @@
 
 import random
-lista_random = []
 
-
+# 1B Gerando a lista através de uma função.
+import random
 def gerar_lista():
     while True:
         try:
@@ -10,23 +10,15 @@ def gerar_lista():
             valor_minimo = int(input('Informe o valor inicial:'))
             valor_maximo = int(input('Informe o  valor final: '))
 
+            lista = [random.randint(valor_minimo, valor_maximo) for _ in range(quantidade)]
+            for numero in lista:
+                print(numero)
+
+            break
+
         except ValueError:
-            print('Valor errado')
-        else:
-            while True:
-                lista_random.append(random.randint(valor_minimo, valor_maximo))
-                if len(lista_random) == quantidade:
-                    print(True)
-                    return(lista_random)
-        finally:
-
-            if len(lista_random) == quantidade:
-
-                print(f'{lista_random}\n')
-                return True
-            else:
-                print(None)
-                return False
-
+            print("Valor inválido. Tente novamente.")
 
 gerar_lista()
+
+
