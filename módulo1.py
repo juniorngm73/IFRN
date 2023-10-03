@@ -9,8 +9,9 @@ def gerar_lista():
             quantidade = int(input('Informe quantos números:  '))
             valor_minimo = int(input('Informe o valor inicial:'))
             valor_maximo = int(input('Informe o  valor final: '))
-
+# Gerar  lista aleatória.
             lista = [random.randint(valor_minimo, valor_maximo) for _ in range(quantidade)]
+# Imprimir lista um numero em cada linha.
             for numero in lista:
                 print(numero)
 
