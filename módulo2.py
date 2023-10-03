@@ -12,7 +12,9 @@ def salvar_lista():
                 print(numero)
 
             arquivo = open('arquivo.txt', 'w')
-            arquivo.writelines(f'{lista}')
+
+            for i in lista:
+                 arquivo.writelines(f'{i}\n')
 
             arquivo.close()
 
@@ -22,4 +24,3 @@ def salvar_lista():
             print("Valor inválido. Tente novamente.")
 
 salvar_lista()
-
