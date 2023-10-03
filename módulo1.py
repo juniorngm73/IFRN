@@ -1,7 +1,6 @@
 
-import random
+#  Gerando a lista através de uma função.
 
-# 1B Gerando a lista através de uma função.
 import random
 def gerar_lista():
     while True:
@@ -13,6 +12,8 @@ def gerar_lista():
 
 # Gerar  lista aleatória.
             lista = [random.randint(valor_minimo, valor_maximo) for _ in range(quantidade)]
+            if len(lista) > 0 :
+                print (True)
 # Imprimir lista um numero em cada linha.
             for numero in lista:
                 print(numero)
