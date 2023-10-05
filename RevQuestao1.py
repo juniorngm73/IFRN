@@ -36,6 +36,8 @@ def salvar_lista(nome_lista, nome_arquivo):
     file.close()
     print(os.path.exists(f'./{nome_arquivo}.txt'))
 
+# Gera o Arquivo lista_random.txt
+
 lista_gerada = gerar_lista()
 salvar_lista(lista_gerada, 'lista_random')
 
