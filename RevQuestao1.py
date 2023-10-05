@@ -29,12 +29,14 @@ def gerar_lista():
 
 def salvar_lista(nome_lista, nome_arquivo):
     file = open(f'{nome_arquivo}.txt', 'w')
+
+# Escrever lista no Arquivo, sendo um numero em cada linha.
     for i in nome_lista:
         file.writelines(f'{i}\n')
     file.close()
     print(os.path.exists(f'./{nome_arquivo}.txt'))
 
 lista_gerada = gerar_lista()
-salvar_lista(lista_gerada, 'LISTAGEM')
+salvar_lista(lista_gerada, 'listagem')
 
 
