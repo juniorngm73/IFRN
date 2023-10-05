@@ -13,6 +13,7 @@ def gerar_lista():
             lista = [random.randint(valor_minimo, valor_maximo) for _ in range(quantidade)]
             if len(lista) > 0 :
                 print (True)
+
 # Imprimir lista, sendo um numero em cada linha.
             for numero in lista:
                 print(numero)
