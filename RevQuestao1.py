@@ -39,6 +39,6 @@ def salvar_lista(nome_lista, nome_arquivo):
 # Gera o Arquivo lista_random.txt
 
 lista_gerada = gerar_lista()
-salvar_lista(lista_gerada, 'lista_random')
+salvar_lista(lista_gerada, 'treino')
 
 
