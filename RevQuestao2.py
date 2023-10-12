@@ -13,7 +13,7 @@ def ler_arquivo():
             print(conteudo)
 
             break
-            arquivo.closecu()
+            arquivo.close()
 
         except:
             print(False)
